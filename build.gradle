@@ -1,0 +1,21 @@
+// For creating a fat-Jar containing all dependencies (task shadowJar)
+plugins {
+  id 'com.github.johnrengelman.shadow' version '2.0.2'
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'uk.ac.ed.easyccg.main.EasyCCG'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'uk.co.flamingpenguin.jewelcli:jewelcli:0.59'
+    compile 'com.google.guava:guava:23.6-jre'
+    compile 'edu.mit:jwi:2.2.3'
+    compile 'com.googlecode.matrix-toolkits-java:mtj:1.0.4'
+}
+
