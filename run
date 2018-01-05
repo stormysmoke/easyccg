@@ -1,0 +1,15 @@
+#!/bin/bash
+
+mkdir -p models
+
+if [[ ! -d models/model ]]; then
+  echo "Downloading model..."
+  curl -s https://stormy-smoke.s3.amazonaws.com/easyccg/model.tar.gz >models/model.tar.gz
+  echo "Extracting model..."
+  tar -xzf models/model.tar.gz -C models
+else
+  echo "Model already downloaded"
+fi
+
+echo "Starting parser"
+java -jar build/libs/easyccg-all.jar -m models/model/
