@@ -1,4 +1,4 @@
-// For creating a fat-Jar containing all dependencies (task shadowJar)
+// For creating a "shadow JAR" containing all dependencies (task shadowJar)
 plugins {
   id 'com.github.johnrengelman.shadow' version '2.0.2'
 }
@@ -19,3 +19,12 @@ dependencies {
     compile 'com.googlecode.matrix-toolkits-java:mtj:1.0.4'
 }
 
+// The "stage" task is run automatically by Heroku for building the app
+task stage(dependsOn: 'shadowJar')
+
+// Configure output file name of shadow Jar
+shadowJar {
+    baseName = 'easyccg'
+    classifier = 'all'
+    version = null
+}
