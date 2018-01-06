@@ -8,8 +8,8 @@ import java.util.concurrent.TimeUnit;
 
 import com.google.common.base.Stopwatch;
 
-import uk.ac.ed.easyccg.main.EasyCCG.CommandLineArguments;
-import uk.ac.ed.easyccg.main.EasyCCG.InputFormat;
+import uk.ac.ed.easyccg.main.CommandLineArguments;
+import uk.ac.ed.easyccg.main.Formats.InputFormat;
 import uk.ac.ed.easyccg.syntax.InputReader.InputWord;
 import uk.ac.ed.easyccg.syntax.SyntaxTreeNode.SyntaxTreeNodeFactory;
 import uk.ac.ed.easyccg.syntax.SyntaxTreeNode.SyntaxTreeNodeLeaf;

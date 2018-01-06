@@ -13,7 +13,7 @@ import java.util.PriorityQueue;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import uk.ac.ed.easyccg.main.EasyCCG.InputFormat;
+import uk.ac.ed.easyccg.main.Formats.InputFormat;
 import uk.ac.ed.easyccg.syntax.Combinator.RuleProduction;
 import uk.ac.ed.easyccg.syntax.Combinator.RuleType;
 import uk.ac.ed.easyccg.syntax.InputReader.InputToParser;
