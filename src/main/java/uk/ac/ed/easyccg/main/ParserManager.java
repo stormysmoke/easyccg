@@ -31,9 +31,16 @@ import uk.ac.ed.easyccg.syntax.evaluation.Evaluate.Results;
 import uk.ac.ed.easyccg.main.Formats.InputFormat;
 import uk.ac.ed.easyccg.main.Formats.OutputFormat;
 
-/* The code in the method bodies of this class has been mostly copied and
- * pasted from the original EasyCCG class. It hasn't been refactored yet. */
+/*
+ * The code in the method bodies of this class has been mostly copied and
+ * pasted from the original EasyCCG class. It hasn't been refactored yet.
+ */
 
+/**
+ * Interface to the EasyCCG parser.
+ *
+ * Provides methods setup(), parse(), and printStats().
+ */
 public class ParserManager {
 
     private static ParserManager instance;

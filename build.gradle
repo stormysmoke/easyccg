@@ -13,10 +13,13 @@ repositories {
 }
 
 dependencies {
+    // Parser
     compile 'uk.co.flamingpenguin.jewelcli:jewelcli:0.59'
     compile 'com.google.guava:guava:23.6-jre'
     compile 'edu.mit:jwi:2.2.3'
     compile 'com.googlecode.matrix-toolkits-java:mtj:1.0.4'
+    // RabbitMQ
+    compile 'com.rabbitmq:amqp-client:5.1.0'
 }
 
 // The "stage" task is run automatically by Heroku for building the app
